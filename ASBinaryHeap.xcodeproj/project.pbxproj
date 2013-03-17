@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		752A27022A084E2A884EA43A /* libPods-ASBinaryHeapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAC4484CF4E45CDA134927B /* libPods-ASBinaryHeapTests.a */; };
+		85D8552A6C5A85A2E8F3763C /* ASBinaryHeapSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D85C9D9EE2B558E4957B61 /* ASBinaryHeapSpec.m */; };
 		A9BC324A16F66279005C6AD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC324916F66279005C6AD8 /* Foundation.framework */; };
 		A9BC324F16F66279005C6AD8 /* ASBinaryHeap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9BC324E16F66279005C6AD8 /* ASBinaryHeap.h */; };
 		A9BC325116F66279005C6AD8 /* ASBinaryHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BC325016F66279005C6AD8 /* ASBinaryHeap.m */; };
@@ -15,7 +17,6 @@
 		A9BC325C16F66279005C6AD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC324916F66279005C6AD8 /* Foundation.framework */; };
 		A9BC325F16F66279005C6AD8 /* libASBinaryHeap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC324616F66279005C6AD8 /* libASBinaryHeap.a */; };
 		A9BC326516F66279005C6AD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9BC326316F66279005C6AD8 /* InfoPlist.strings */; };
-		A9BC326816F66279005C6AD8 /* ASBinaryHeapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BC326716F66279005C6AD8 /* ASBinaryHeapTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4FAC4484CF4E45CDA134927B /* libPods-ASBinaryHeapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ASBinaryHeapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D85C9D9EE2B558E4957B61 /* ASBinaryHeapSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBinaryHeapSpec.m; sourceTree = "<group>"; };
 		A9BC324616F66279005C6AD8 /* libASBinaryHeap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libASBinaryHeap.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BC324916F66279005C6AD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A9BC324D16F66279005C6AD8 /* ASBinaryHeap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASBinaryHeap-Prefix.pch"; sourceTree = "<group>"; };
@@ -52,8 +55,7 @@
 		A9BC325A16F66279005C6AD8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A9BC326216F66279005C6AD8 /* ASBinaryHeapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASBinaryHeapTests-Info.plist"; sourceTree = "<group>"; };
 		A9BC326416F66279005C6AD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A9BC326616F66279005C6AD8 /* ASBinaryHeapTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBinaryHeapTests.h; sourceTree = "<group>"; };
-		A9BC326716F66279005C6AD8 /* ASBinaryHeapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBinaryHeapTests.m; sourceTree = "<group>"; };
+		E24F8823EAC645B8A5E7A7AF /* Pods-ASBinaryHeapTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASBinaryHeapTests.xcconfig"; path = "Pods/Pods-ASBinaryHeapTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				A9BC325B16F66279005C6AD8 /* UIKit.framework in Frameworks */,
 				A9BC325C16F66279005C6AD8 /* Foundation.framework in Frameworks */,
 				A9BC325F16F66279005C6AD8 /* libASBinaryHeap.a in Frameworks */,
+				752A27022A084E2A884EA43A /* libPods-ASBinaryHeapTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,7 @@
 				A9BC326016F66279005C6AD8 /* ASBinaryHeapTests */,
 				A9BC324816F66279005C6AD8 /* Frameworks */,
 				A9BC324716F66279005C6AD8 /* Products */,
+				E24F8823EAC645B8A5E7A7AF /* Pods-ASBinaryHeapTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,6 +108,7 @@
 				A9BC324916F66279005C6AD8 /* Foundation.framework */,
 				A9BC325816F66279005C6AD8 /* SenTestingKit.framework */,
 				A9BC325A16F66279005C6AD8 /* UIKit.framework */,
+				4FAC4484CF4E45CDA134927B /* libPods-ASBinaryHeapTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,9 +134,8 @@
 		A9BC326016F66279005C6AD8 /* ASBinaryHeapTests */ = {
 			isa = PBXGroup;
 			children = (
-				A9BC326616F66279005C6AD8 /* ASBinaryHeapTests.h */,
-				A9BC326716F66279005C6AD8 /* ASBinaryHeapTests.m */,
 				A9BC326116F66279005C6AD8 /* Supporting Files */,
+				85D85C9D9EE2B558E4957B61 /* ASBinaryHeapSpec.m */,
 			);
 			path = ASBinaryHeapTests;
 			sourceTree = "<group>";
@@ -173,6 +177,7 @@
 				A9BC325316F66279005C6AD8 /* Frameworks */,
 				A9BC325416F66279005C6AD8 /* Resources */,
 				A9BC325516F66279005C6AD8 /* ShellScript */,
+				08C417F1EC194EE7AA0DB297 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -223,6 +228,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		08C417F1EC194EE7AA0DB297 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-ASBinaryHeapTests-resources.sh\"\n";
+		};
 		A9BC325516F66279005C6AD8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9BC326816F66279005C6AD8 /* ASBinaryHeapTests.m in Sources */,
+				85D8552A6C5A85A2E8F3763C /* ASBinaryHeapSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,11 +368,8 @@
 		};
 		A9BC326F16F66279005C6AD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E24F8823EAC645B8A5E7A7AF /* Pods-ASBinaryHeapTests.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASBinaryHeap/ASBinaryHeap-Prefix.pch";
 				INFOPLIST_FILE = "ASBinaryHeapTests/ASBinaryHeapTests-Info.plist";
@@ -364,11 +380,8 @@
 		};
 		A9BC327016F66279005C6AD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E24F8823EAC645B8A5E7A7AF /* Pods-ASBinaryHeapTests.xcconfig */;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASBinaryHeap/ASBinaryHeap-Prefix.pch";
 				INFOPLIST_FILE = "ASBinaryHeapTests/ASBinaryHeapTests-Info.plist";
@@ -396,6 +409,7 @@
 				A9BC326D16F66279005C6AD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9BC326E16F66279005C6AD8 /* Build configuration list for PBXNativeTarget "ASBinaryHeapTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +418,7 @@
 				A9BC327016F66279005C6AD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

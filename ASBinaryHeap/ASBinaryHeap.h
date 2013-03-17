@@ -10,4 +10,7 @@
 
 @interface ASBinaryHeap : NSObject
 
+- (id)firstObject;
+
+- (void)addObject:(id)object;
 @end
