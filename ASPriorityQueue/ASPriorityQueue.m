@@ -1,6 +1,6 @@
-#import "ASBinaryHeap.h"
+#import "ASPriorityQueue.h"
 
-@implementation ASBinaryHeap {
+@implementation ASPriorityQueue {
 	NSMutableArray *_objects;
 }
 

@@ -1,14 +1,14 @@
 #import "Kiwi.h"
-#import "ASBinaryHeap.h"
+#import "ASPriorityQueue.h"
 
-SPEC_BEGIN(ASBinaryHeapSpec)
+SPEC_BEGIN(ASPriorityQueueSpec)
 
 
-describe(@"ASBinaryHeap", ^{
-	__block ASBinaryHeap *binaryHeap;
+describe(@"ASPriorityQueue", ^{
+	__block ASPriorityQueue *binaryHeap;
 
 	beforeEach(^{
-		binaryHeap = [[ASBinaryHeap alloc] init];
+		binaryHeap = [[ASPriorityQueue alloc] init];
 	});
 
 

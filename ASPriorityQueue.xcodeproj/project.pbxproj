@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		752A27022A084E2A884EA43A /* libPods-ASBinaryHeapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAC4484CF4E45CDA134927B /* libPods-ASBinaryHeapTests.a */; };
-		85D8552A6C5A85A2E8F3763C /* ASBinaryHeapSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D85C9D9EE2B558E4957B61 /* ASBinaryHeapSpec.m */; };
+		442B0F1E58634CF8B7A74740 /* libPods-ASPriorityQueueTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F82BE43A17E41DEBC73C02C /* libPods-ASPriorityQueueTests.a */; };
+		A95D6A7916F6821700672277 /* ASPriorityQueueSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 85D85C9D9EE2B558E4957B61 /* ASPriorityQueueSpec.m */; };
 		A9BC324A16F66279005C6AD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC324916F66279005C6AD8 /* Foundation.framework */; };
-		A9BC324F16F66279005C6AD8 /* ASBinaryHeap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9BC324E16F66279005C6AD8 /* ASBinaryHeap.h */; };
-		A9BC325116F66279005C6AD8 /* ASBinaryHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BC325016F66279005C6AD8 /* ASBinaryHeap.m */; };
+		A9BC324F16F66279005C6AD8 /* ASPriorityQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A9BC324E16F66279005C6AD8 /* ASPriorityQueue.h */; };
+		A9BC325116F66279005C6AD8 /* ASPriorityQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A9BC325016F66279005C6AD8 /* ASPriorityQueue.m */; };
 		A9BC325916F66279005C6AD8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC325816F66279005C6AD8 /* SenTestingKit.framework */; };
 		A9BC325B16F66279005C6AD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC325A16F66279005C6AD8 /* UIKit.framework */; };
 		A9BC325C16F66279005C6AD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC324916F66279005C6AD8 /* Foundation.framework */; };
-		A9BC325F16F66279005C6AD8 /* libASBinaryHeap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC324616F66279005C6AD8 /* libASBinaryHeap.a */; };
+		A9BC325F16F66279005C6AD8 /* ASPriorityQueue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC324616F66279005C6AD8 /* ASPriorityQueue.a */; };
 		A9BC326516F66279005C6AD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9BC326316F66279005C6AD8 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
@@ -36,26 +36,26 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				A9BC324F16F66279005C6AD8 /* ASBinaryHeap.h in CopyFiles */,
+				A9BC324F16F66279005C6AD8 /* ASPriorityQueue.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4FAC4484CF4E45CDA134927B /* libPods-ASBinaryHeapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ASBinaryHeapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		85D85C9D9EE2B558E4957B61 /* ASBinaryHeapSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASBinaryHeapSpec.m; sourceTree = "<group>"; };
-		A9BC324616F66279005C6AD8 /* libASBinaryHeap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libASBinaryHeap.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		60CD4DE3C414467DBAC41FBB /* Pods-ASPriorityQueueTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASPriorityQueueTests.xcconfig"; path = "Pods/Pods-ASPriorityQueueTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		6F82BE43A17E41DEBC73C02C /* libPods-ASPriorityQueueTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ASPriorityQueueTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D85C9D9EE2B558E4957B61 /* ASPriorityQueueSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPriorityQueueSpec.m; sourceTree = "<group>"; };
+		A9BC324616F66279005C6AD8 /* ASPriorityQueue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = ASPriorityQueue.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BC324916F66279005C6AD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A9BC324D16F66279005C6AD8 /* ASBinaryHeap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASBinaryHeap-Prefix.pch"; sourceTree = "<group>"; };
-		A9BC324E16F66279005C6AD8 /* ASBinaryHeap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASBinaryHeap.h; sourceTree = "<group>"; };
-		A9BC325016F66279005C6AD8 /* ASBinaryHeap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASBinaryHeap.m; sourceTree = "<group>"; };
-		A9BC325716F66279005C6AD8 /* ASBinaryHeapTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASBinaryHeapTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9BC324D16F66279005C6AD8 /* ASPriorityQueue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASPriorityQueue-Prefix.pch"; sourceTree = "<group>"; };
+		A9BC324E16F66279005C6AD8 /* ASPriorityQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASPriorityQueue.h; sourceTree = "<group>"; };
+		A9BC325016F66279005C6AD8 /* ASPriorityQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASPriorityQueue.m; sourceTree = "<group>"; };
+		A9BC325716F66279005C6AD8 /* ASPriorityQueueTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASPriorityQueueTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BC325816F66279005C6AD8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A9BC325A16F66279005C6AD8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A9BC326216F66279005C6AD8 /* ASBinaryHeapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASBinaryHeapTests-Info.plist"; sourceTree = "<group>"; };
+		A9BC326216F66279005C6AD8 /* ASPriorityQueueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASPriorityQueueTests-Info.plist"; sourceTree = "<group>"; };
 		A9BC326416F66279005C6AD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E24F8823EAC645B8A5E7A7AF /* Pods-ASBinaryHeapTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ASBinaryHeapTests.xcconfig"; path = "Pods/Pods-ASBinaryHeapTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +74,8 @@
 				A9BC325916F66279005C6AD8 /* SenTestingKit.framework in Frameworks */,
 				A9BC325B16F66279005C6AD8 /* UIKit.framework in Frameworks */,
 				A9BC325C16F66279005C6AD8 /* Foundation.framework in Frameworks */,
-				A9BC325F16F66279005C6AD8 /* libASBinaryHeap.a in Frameworks */,
-				752A27022A084E2A884EA43A /* libPods-ASBinaryHeapTests.a in Frameworks */,
+				A9BC325F16F66279005C6AD8 /* ASPriorityQueue.a in Frameworks */,
+				442B0F1E58634CF8B7A74740 /* libPods-ASPriorityQueueTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,19 +85,19 @@
 		A9BC323B16F66279005C6AD8 = {
 			isa = PBXGroup;
 			children = (
-				A9BC324B16F66279005C6AD8 /* ASBinaryHeap */,
-				A9BC326016F66279005C6AD8 /* ASBinaryHeapTests */,
+				A9BC324B16F66279005C6AD8 /* ASPriorityQueue */,
+				A9BC326016F66279005C6AD8 /* ASPriorityQueueTests */,
 				A9BC324816F66279005C6AD8 /* Frameworks */,
 				A9BC324716F66279005C6AD8 /* Products */,
-				E24F8823EAC645B8A5E7A7AF /* Pods-ASBinaryHeapTests.xcconfig */,
+				60CD4DE3C414467DBAC41FBB /* Pods-ASPriorityQueueTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		A9BC324716F66279005C6AD8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A9BC324616F66279005C6AD8 /* libASBinaryHeap.a */,
-				A9BC325716F66279005C6AD8 /* ASBinaryHeapTests.octest */,
+				A9BC324616F66279005C6AD8 /* ASPriorityQueue.a */,
+				A9BC325716F66279005C6AD8 /* ASPriorityQueueTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,42 +108,42 @@
 				A9BC324916F66279005C6AD8 /* Foundation.framework */,
 				A9BC325816F66279005C6AD8 /* SenTestingKit.framework */,
 				A9BC325A16F66279005C6AD8 /* UIKit.framework */,
-				4FAC4484CF4E45CDA134927B /* libPods-ASBinaryHeapTests.a */,
+				6F82BE43A17E41DEBC73C02C /* libPods-ASPriorityQueueTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A9BC324B16F66279005C6AD8 /* ASBinaryHeap */ = {
+		A9BC324B16F66279005C6AD8 /* ASPriorityQueue */ = {
 			isa = PBXGroup;
 			children = (
-				A9BC324E16F66279005C6AD8 /* ASBinaryHeap.h */,
-				A9BC325016F66279005C6AD8 /* ASBinaryHeap.m */,
+				A9BC324E16F66279005C6AD8 /* ASPriorityQueue.h */,
+				A9BC325016F66279005C6AD8 /* ASPriorityQueue.m */,
 				A9BC324C16F66279005C6AD8 /* Supporting Files */,
 			);
-			path = ASBinaryHeap;
+			path = ASPriorityQueue;
 			sourceTree = "<group>";
 		};
 		A9BC324C16F66279005C6AD8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A9BC324D16F66279005C6AD8 /* ASBinaryHeap-Prefix.pch */,
+				A9BC324D16F66279005C6AD8 /* ASPriorityQueue-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A9BC326016F66279005C6AD8 /* ASBinaryHeapTests */ = {
+		A9BC326016F66279005C6AD8 /* ASPriorityQueueTests */ = {
 			isa = PBXGroup;
 			children = (
 				A9BC326116F66279005C6AD8 /* Supporting Files */,
-				85D85C9D9EE2B558E4957B61 /* ASBinaryHeapSpec.m */,
+				85D85C9D9EE2B558E4957B61 /* ASPriorityQueueSpec.m */,
 			);
-			path = ASBinaryHeapTests;
+			path = ASPriorityQueueTests;
 			sourceTree = "<group>";
 		};
 		A9BC326116F66279005C6AD8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A9BC326216F66279005C6AD8 /* ASBinaryHeapTests-Info.plist */,
+				A9BC326216F66279005C6AD8 /* ASPriorityQueueTests-Info.plist */,
 				A9BC326316F66279005C6AD8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -152,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A9BC324516F66279005C6AD8 /* ASBinaryHeap */ = {
+		A9BC324516F66279005C6AD8 /* ASPriorityQueue */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9BC326B16F66279005C6AD8 /* Build configuration list for PBXNativeTarget "ASBinaryHeap" */;
+			buildConfigurationList = A9BC326B16F66279005C6AD8 /* Build configuration list for PBXNativeTarget "ASPriorityQueue" */;
 			buildPhases = (
 				A9BC324216F66279005C6AD8 /* Sources */,
 				A9BC324316F66279005C6AD8 /* Frameworks */,
@@ -164,29 +164,29 @@
 			);
 			dependencies = (
 			);
-			name = ASBinaryHeap;
+			name = ASPriorityQueue;
 			productName = ASBinaryHeap;
-			productReference = A9BC324616F66279005C6AD8 /* libASBinaryHeap.a */;
+			productReference = A9BC324616F66279005C6AD8 /* ASPriorityQueue.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A9BC325616F66279005C6AD8 /* ASBinaryHeapTests */ = {
+		A9BC325616F66279005C6AD8 /* ASPriorityQueueTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9BC326E16F66279005C6AD8 /* Build configuration list for PBXNativeTarget "ASBinaryHeapTests" */;
+			buildConfigurationList = A9BC326E16F66279005C6AD8 /* Build configuration list for PBXNativeTarget "ASPriorityQueueTests" */;
 			buildPhases = (
 				A9BC325216F66279005C6AD8 /* Sources */,
 				A9BC325316F66279005C6AD8 /* Frameworks */,
 				A9BC325416F66279005C6AD8 /* Resources */,
 				A9BC325516F66279005C6AD8 /* ShellScript */,
-				08C417F1EC194EE7AA0DB297 /* Copy Pods Resources */,
+				7136E4B09DF44E999518EE74 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				A9BC325E16F66279005C6AD8 /* PBXTargetDependency */,
 			);
-			name = ASBinaryHeapTests;
+			name = ASPriorityQueueTests;
 			productName = ASBinaryHeapTests;
-			productReference = A9BC325716F66279005C6AD8 /* ASBinaryHeapTests.octest */;
+			productReference = A9BC325716F66279005C6AD8 /* ASPriorityQueueTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -198,7 +198,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = arneschroppe;
 			};
-			buildConfigurationList = A9BC324016F66279005C6AD8 /* Build configuration list for PBXProject "ASBinaryHeap" */;
+			buildConfigurationList = A9BC324016F66279005C6AD8 /* Build configuration list for PBXProject "ASPriorityQueue" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -210,8 +210,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A9BC324516F66279005C6AD8 /* ASBinaryHeap */,
-				A9BC325616F66279005C6AD8 /* ASBinaryHeapTests */,
+				A9BC324516F66279005C6AD8 /* ASPriorityQueue */,
+				A9BC325616F66279005C6AD8 /* ASPriorityQueueTests */,
 			);
 		};
 /* End PBXProject section */
@@ -228,7 +228,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08C417F1EC194EE7AA0DB297 /* Copy Pods Resources */ = {
+		7136E4B09DF44E999518EE74 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -240,7 +240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-ASBinaryHeapTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-ASPriorityQueueTests-resources.sh\"\n";
 		};
 		A9BC325516F66279005C6AD8 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9BC325116F66279005C6AD8 /* ASBinaryHeap.m in Sources */,
+				A9BC325116F66279005C6AD8 /* ASPriorityQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85D8552A6C5A85A2E8F3763C /* ASBinaryHeapSpec.m in Sources */,
+				A95D6A7916F6821700672277 /* ASPriorityQueueSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +279,7 @@
 /* Begin PBXTargetDependency section */
 		A9BC325E16F66279005C6AD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A9BC324516F66279005C6AD8 /* ASBinaryHeap */;
+			target = A9BC324516F66279005C6AD8 /* ASPriorityQueue */;
 			targetProxy = A9BC325D16F66279005C6AD8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -306,9 +306,12 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SOURCE_ROOT)/ASPriorityQueue/ASPriorityQueue-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -332,7 +335,10 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				EXECUTABLE_PREFIX = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SOURCE_ROOT)/ASPriorityQueue/ASPriorityQueue-Prefix.pch";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -345,11 +351,10 @@
 		A9BC326C16F66279005C6AD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/ASBinaryHeap.dst;
+				EXECUTABLE_PREFIX = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ASBinaryHeap/ASBinaryHeap-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ASPriorityQueue;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -357,35 +362,32 @@
 		A9BC326D16F66279005C6AD8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/ASBinaryHeap.dst;
+				EXECUTABLE_PREFIX = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ASBinaryHeap/ASBinaryHeap-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ASPriorityQueue;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		A9BC326F16F66279005C6AD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E24F8823EAC645B8A5E7A7AF /* Pods-ASBinaryHeapTests.xcconfig */;
+			baseConfigurationReference = 60CD4DE3C414467DBAC41FBB /* Pods-ASPriorityQueueTests.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ASBinaryHeap/ASBinaryHeap-Prefix.pch";
-				INFOPLIST_FILE = "ASBinaryHeapTests/ASBinaryHeapTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ASPriorityQueueTests/ASPriorityQueueTests-Info.plist";
+				PRODUCT_NAME = ASPriorityQueueTests;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
 		A9BC327016F66279005C6AD8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E24F8823EAC645B8A5E7A7AF /* Pods-ASBinaryHeapTests.xcconfig */;
+			baseConfigurationReference = 60CD4DE3C414467DBAC41FBB /* Pods-ASPriorityQueueTests.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ASBinaryHeap/ASBinaryHeap-Prefix.pch";
-				INFOPLIST_FILE = "ASBinaryHeapTests/ASBinaryHeapTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "ASPriorityQueueTests/ASPriorityQueueTests-Info.plist";
+				PRODUCT_NAME = ASPriorityQueueTests;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -393,7 +395,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A9BC324016F66279005C6AD8 /* Build configuration list for PBXProject "ASBinaryHeap" */ = {
+		A9BC324016F66279005C6AD8 /* Build configuration list for PBXProject "ASPriorityQueue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9BC326916F66279005C6AD8 /* Debug */,
@@ -402,7 +404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9BC326B16F66279005C6AD8 /* Build configuration list for PBXNativeTarget "ASBinaryHeap" */ = {
+		A9BC326B16F66279005C6AD8 /* Build configuration list for PBXNativeTarget "ASPriorityQueue" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9BC326C16F66279005C6AD8 /* Debug */,
@@ -411,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9BC326E16F66279005C6AD8 /* Build configuration list for PBXNativeTarget "ASBinaryHeapTests" */ = {
+		A9BC326E16F66279005C6AD8 /* Build configuration list for PBXNativeTarget "ASPriorityQueueTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9BC326F16F66279005C6AD8 /* Debug */,

@@ -1,4 +1,4 @@
 platform :ios
-target :ASBinaryHeapTests, :exclusive => true do
+target :ASPriorityQueueTests, :exclusive => true do
   pod 'Kiwi'
 end

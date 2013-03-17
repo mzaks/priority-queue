@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A9BC324516F66279005C6AD8"
-               BuildableName = "libASBinaryHeap.a"
-               BlueprintName = "ASBinaryHeap"
-               ReferencedContainer = "container:ASBinaryHeap.xcodeproj">
+               BuildableName = "ASPriorityQueue.a"
+               BlueprintName = "ASPriorityQueue"
+               ReferencedContainer = "container:ASPriorityQueue.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A9BC325616F66279005C6AD8"
-               BuildableName = "ASBinaryHeapTests.octest"
-               BlueprintName = "ASBinaryHeapTests"
-               ReferencedContainer = "container:ASBinaryHeap.xcodeproj">
+               BuildableName = "ASPriorityQueueTests.octest"
+               BlueprintName = "ASPriorityQueueTests"
+               ReferencedContainer = "container:ASPriorityQueue.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

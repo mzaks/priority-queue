@@ -2,17 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ef7a43d-87ec-46f5-8d71-ac31a88a7f7c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ASBinaryHeap.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ASBinaryHeapTests/ASBinaryHeapSpec.m" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeapTests/ASBinaryHeapTests.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeapTests/ASBinaryHeapTests.m" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.h" afterPath="$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.m" afterPath="$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.m" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcworkspace/contents.xcworkspacedata" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcworkspace/xcuserdata/arneschroppe.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeap/ASPriorityQueue-Prefix.pch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeap/ASPriorityQueue.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeapTests/ASPriorityQueueSpec.m" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeapTests/ASPriorityQueueTests-Info.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeapTests/en.lproj/InfoPlist.strings" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/project.pbxproj" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/project.xcworkspace/xcuserdata/arneschroppe.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/project.xcworkspace/xcuserdata/arneschroppe.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/ASBinaryHeap.xcscheme" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/ASBinaryHeap.xcscheme" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/Test.xcscheme" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/Test.xcscheme" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/xcode.xml" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile" afterPath="$PROJECT_DIR$/Podfile" />
     </list>
     <ignored path="ASBinaryHeap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,45 +38,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_6.0_1" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="ASBinaryHeap.h" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="24" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ASBinaryHeap.m" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.m">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="18" selection-start="44" selection-end="44" vertical-scroll-proportion="0.051107325">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="ASBinaryHeapSpec.m" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ASBinaryHeapTests/ASBinaryHeapSpec.m">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="-1.044293">
-                  <folding>
-                    <element signature="e#0#16#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -83,17 +52,19 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/ASBinaryHeapTests/TestTest.m" />
-        <option value="$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.h" />
         <option value="$PROJECT_DIR$/ASBinaryHeapTests/ASMutableBinaryHeapSpec.m" />
         <option value="$PROJECT_DIR$/ASBinaryHeap/ASMutableBinaryHeap.m" />
         <option value="$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.m" />
         <option value="$PROJECT_DIR$/ASBinaryHeapTests/ASBinaryHeapSpec.m" />
+        <option value="$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.h" />
+        <option value="$PROJECT_DIR$/ASBinaryHeap/ASPriorityQueue.h" />
+        <option value="$PROJECT_DIR$/ASBinaryHeapTests/ASPriorityQueueSpec.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1331" />
-    <option name="y" value="36" />
+    <option name="x" value="1346" />
+    <option name="y" value="38" />
     <option name="width" value="1740" />
     <option name="height" value="1100" />
   </component>
@@ -138,50 +109,8 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ASBinaryHeap" />
+              <option name="myItemId" value="ASPriorityQueue" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASBinaryHeap" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Frameworks" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASBinaryHeap" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASBinaryHeapTests" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASBinaryHeap" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ASBinaryHeap" />
-              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -193,6 +122,8 @@
     <property name="options.lastSelected" value="fileTemplates" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ASPriorityQueue.xcworkspace" />
+    <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="ASBinaryHeapTests" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -206,23 +137,23 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Pods-ASBinaryHeapTests" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="Pods-ASBinaryHeapTests" PROJECT_NAME="Pods" TARGET_NAME="Pods-ASBinaryHeapTests" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="false" name="ASBinaryHeap" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="ASBinaryHeap" PROJECT_NAME="ASPriorityQueue" TARGET_NAME="ASPriorityQueue" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="ASBinaryHeap" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="ASBinaryHeap" PROJECT_NAME="ASBinaryHeap" TARGET_NAME="ASBinaryHeap" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <configuration default="false" name="Pods-ASPriorityQueueTests" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="Pods-ASPriorityQueueTests" PROJECT_NAME="Pods" TARGET_NAME="Pods-ASPriorityQueueTests" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Test" type="OCUnitRunConfiguration" factoryName="OCUnit" SCHEME_NAME="Test" PROJECT_NAME="ASBinaryHeap" TARGET_NAME="ASBinaryHeapTests" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE">
+    <configuration default="false" name="Test" type="OCUnitRunConfiguration" factoryName="OCUnit" SCHEME_NAME="Test" PROJECT_NAME="ASPriorityQueue" TARGET_NAME="ASPriorityQueueTests" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE">
       <envs />
       <RunnerSettings RunnerId="AppRunner" />
       <ConfigurationWrapper RunnerId="AppRunner" />
       <method />
     </configuration>
     <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.Pods-ASBinaryHeapTests" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ASBinaryHeap" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ASBinaryHeap" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Pods-ASPriorityQueueTests" />
       <item index="2" class="java.lang.String" itemvalue="OCUnit.Test" />
     </list>
   </component>
@@ -254,13 +185,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1331" y="36" width="1740" height="1100" extended-state="6" />
-    <editor active="true" />
+    <frame x="1346" y="38" width="1740" height="1100" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16423996" sideWeight="0.610338" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38966203" sideWeight="0.9884027" order="3" side_tool="false" content_ui="tabs" />
@@ -271,6 +201,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -327,77 +258,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBinaryHeapTests/ASBinaryHeapSpec.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="7" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBinaryHeapTests/ASBinaryHeapSpec.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="50" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="44" selection-end="44" vertical-scroll-proportion="0.051107325">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ASBinaryHeapTests/ASBinaryHeapSpec.m">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="-1.044293">
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
 
