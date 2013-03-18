@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ef7a43d-87ec-46f5-8d71-ac31a88a7f7c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcworkspace/contents.xcworkspacedata" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcworkspace/xcuserdata/arneschroppe.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeap/ASPriorityQueue-Prefix.pch" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeap/ASPriorityQueue.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeapTests/ASPriorityQueueSpec.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeapTests/ASPriorityQueueTests-Info.plist" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ASBinaryHeapTests/en.lproj/InfoPlist.strings" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/project.pbxproj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/project.xcworkspace/contents.xcworkspacedata" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/project.xcworkspace/xcuserdata/arneschroppe.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/project.xcworkspace/xcuserdata/arneschroppe.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/ASBinaryHeap.xcscheme" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/ASBinaryHeap.xcscheme" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/Test.xcscheme" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/Test.xcscheme" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ASBinaryHeap.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/ASPriorityQueue.xcodeproj/xcuserdata/arneschroppe.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/xcode.xml" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Podfile" afterPath="$PROJECT_DIR$/Podfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASPriorityQueue/ASPriorityQueue.h" afterPath="$PROJECT_DIR$/ASPriorityQueue/ASPriorityQueue.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASPriorityQueue/ASPriorityQueue.m" afterPath="$PROJECT_DIR$/ASPriorityQueue/ASPriorityQueue.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ASPriorityQueueTests/ASPriorityQueueSpec.m" afterPath="$PROJECT_DIR$/ASPriorityQueueTests/ASPriorityQueueSpec.m" />
     </list>
     <ignored path="ASBinaryHeap.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +24,36 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_6.0_1" />
   <component name="FileEditorManager">
-    <leaf />
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="ASPriorityQueueSpec.m" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ASPriorityQueueTests/ASPriorityQueueSpec.m">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="198" column="44" selection-start="3936" selection-end="3936" vertical-scroll-proportion="1.192582">
+                  <folding>
+                    <element signature="e#0#16#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="ASPriorityQueue.m" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ASPriorityQueue/ASPriorityQueue.m">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="50" column="0" selection-start="762" selection-end="762" vertical-scroll-proportion="1.0699002">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -59,14 +74,15 @@
         <option value="$PROJECT_DIR$/ASBinaryHeap/ASBinaryHeap.h" />
         <option value="$PROJECT_DIR$/ASBinaryHeap/ASPriorityQueue.h" />
         <option value="$PROJECT_DIR$/ASBinaryHeapTests/ASPriorityQueueSpec.m" />
+        <option value="$PROJECT_DIR$/ASPriorityQueue/ASPriorityQueue.m" />
+        <option value="$PROJECT_DIR$/ASPriorityQueueTests/ASPriorityQueueSpec.m" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1346" />
-    <option name="y" value="38" />
-    <option name="width" value="1740" />
-    <option name="height" value="1100" />
+    <option name="x" value="1291" />
+    <option name="width" value="1906" />
+    <option name="height" value="1193" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -94,7 +110,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="DirectoryView.Xcode" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -113,20 +128,49 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASPriorityQueue" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASPriorityQueueTests" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASPriorityQueue" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ASPriorityQueue" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodePBXReferenceNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="DirectoryView.Xcode" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="fileTemplates" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ASPriorityQueue.xcworkspace" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="ASBinaryHeapTests" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="OCUnit.Test">
     <configuration default="true" type="OCUnitRunConfiguration" factoryName="OCUnit" PROJECT_NAME="ASBinaryHeap" TARGET_NAME="ASBinaryHeapTests" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE">
@@ -185,15 +229,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1346" y="38" width="1740" height="1100" extended-state="0" />
-    <editor active="false" />
+    <frame x="1291" y="0" width="1906" height="1193" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32902583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16423996" sideWeight="0.610338" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38966203" sideWeight="0.9884027" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.104620285" sideWeight="0.6624204" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3375796" sideWeight="0.9984068" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -258,6 +302,31 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimalNumber.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="22" selection-start="3701" selection-end="3701" vertical-scroll-proportion="0.33284885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASPriorityQueue/ASPriorityQueue.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="762" selection-end="762" vertical-scroll-proportion="1.0699002">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ASPriorityQueueTests/ASPriorityQueueSpec.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="198" column="44" selection-start="3936" selection-end="3936" vertical-scroll-proportion="1.192582">
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
 
