@@ -2,17 +2,15 @@
 
 @interface ASPriorityQueue : NSObject
 
-- (id)firstObject;
-
 - (id)initWithComparator:(NSComparator)comparator;
+
+- (id)firstObject;
+- (void)removeFirstObject;
 
 - (void)addObject:(id)object;
 
-- (void)removeFirstObject;
-
 - (BOOL)containsObject:(id)object;
-
 - (NSUInteger)count;
-
 - (NSArray *)allValues;
+
 @end
