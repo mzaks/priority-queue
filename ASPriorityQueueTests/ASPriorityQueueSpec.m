@@ -39,7 +39,7 @@ describe(@"ASPriorityQueue", ^{
 		});
 
 
-		it(@"always returns the 'smallest' object as the first object", ^{
+		it(@"always returns the 'largest' object as the first object", ^{
 
 			//given
 			[priorityQueue addObject:@3];
@@ -50,7 +50,7 @@ describe(@"ASPriorityQueue", ^{
 			id firstObject = [priorityQueue firstObject];
 
 			//then
-			[[firstObject should] equal:@1];
+			[[firstObject should] equal:@3];
 		});
 
 
@@ -61,12 +61,17 @@ describe(@"ASPriorityQueue", ^{
 			[priorityQueue addObject:@1];
 			[priorityQueue addObject:@2];
 
-			//when
+			//when //then
 			[priorityQueue removeFirstObject];
-
-			//then
 			[[[priorityQueue firstObject] should] equal:@2];
 
+			//when //then
+			[priorityQueue removeFirstObject];
+			[[[priorityQueue firstObject] should] equal:@1];
+
+			//when //then
+			[priorityQueue removeFirstObject];
+			[[priorityQueue firstObject] shouldBeNil];
 		});
 
 
@@ -74,18 +79,18 @@ describe(@"ASPriorityQueue", ^{
 
 			//given
 			[priorityQueue addObject:@3];
-			[priorityQueue addObject:@1];
-			[priorityQueue addObject:@1];
+			[priorityQueue addObject:@3];
 			[priorityQueue addObject:@2];
+			[priorityQueue addObject:@3];
 			[priorityQueue addObject:@1];
 
 			//when //then
 			[priorityQueue removeFirstObject];
-			[[[priorityQueue firstObject] should] equal:@1];
+			[[[priorityQueue firstObject] should] equal:@3];
 
 			//when //then
 			[priorityQueue removeFirstObject];
-			[[[priorityQueue firstObject] should] equal:@1];
+			[[[priorityQueue firstObject] should] equal:@3];
 
 			//when //then
 			[priorityQueue removeFirstObject];
@@ -170,7 +175,7 @@ describe(@"ASPriorityQueue", ^{
 			NSArray *values = [priorityQueue allValues];
 
 			//then
-			[[values should] equal:@[@1, @2, @3]];
+			[[values should] equal:@[@3, @2, @1]];
 		});
 
 
@@ -183,8 +188,7 @@ describe(@"ASPriorityQueue", ^{
 			NSNumber *three = [NSNumber nullMockWithName:@"three"];
 
 			//expectations
-			[[one should] receive:@selector(compare:)];
-			[[three should] receive:@selector(compare:)];
+			[[one should] receive:@selector(compare:) withCountAtLeast:1];
 
 			//when
 			[priorityQueue addObject:three];
@@ -225,7 +229,7 @@ describe(@"ASPriorityQueue", ^{
 			NSArray *values = [priorityQueue allValues];
 
 			//then
-			[[values should] equal:@[@3, @2, @1]];
+			[[values should] equal:@[@1, @2, @3]];
 
 		});
 
