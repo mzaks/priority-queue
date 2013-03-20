@@ -234,6 +234,24 @@ describe(@"ASPriorityQueue", ^{
 		});
 
 
+		it(@"should properly reallocate more storage", ^{
+
+			//given
+			NSComparator comparator = ^NSComparisonResult(id left, id right) {
+				return [right compare:left];
+			};
+
+			priorityQueue = [[ASPriorityQueue alloc] initWithComparator:comparator andCapacity:16];
+
+			//then
+			[[theBlock(^{
+				for (int i = 0; i < 129; i++) {
+					[priorityQueue addObject:@(i)];
+				}
+			}) shouldNot] raise];
+
+		});
+
 	});
 
 

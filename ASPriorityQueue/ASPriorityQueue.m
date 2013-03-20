@@ -4,12 +4,14 @@
 #define left(index) (index << 1)
 #define right(index) ((index << 1) | 1)
 
+#define DEFAULT_CAPACITY 12
+
 @implementation ASPriorityQueue {
-	NSMutableArray *_objects;
+	id *_objects;
+	NSUInteger _capacity;
+	NSUInteger _heapSize;
 	NSComparator _comparator;
 }
-
-
 
 - (id)init {
 	return [self initWithComparator:^NSComparisonResult(id first, id second){
@@ -18,9 +20,15 @@
 }
 
 - (id)initWithComparator:(NSComparator)comparator {
+	return [self initWithComparator:comparator andCapacity:DEFAULT_CAPACITY];
+}
+
+- (id)initWithComparator:(NSComparator)comparator andCapacity:(NSUInteger)capacity {
 	self = [super init];
 	if (self) {
-		_objects = [NSMutableArray array];
+		_capacity = capacity;
+		_objects = (id *) calloc(_capacity, sizeof(id));
+		_heapSize = 0;
 		_comparator = comparator;
 	}
 
@@ -28,8 +36,17 @@
 }
 
 
+- (void)dealloc {
+	free(_objects);
+	_objects = NULL;
+	_heapSize = 0;
+	_capacity = 0;
+	[super dealloc];
+}
+
+
 - (id)firstObject {
-	if (_objects.count == 0) {
+	if (_heapSize == 0) {
 		return nil;
 	}
 
@@ -38,29 +55,80 @@
 
 
 - (void)addObject:(id)object {
-	[_objects addObject:object];
+	if (_heapSize == _capacity) {
+		[self resizeStorage];
+	}
+
+	_objects[_heapSize] = [object retain];
+	_heapSize++;
+
 	[self heapify];
 }
 
+
+- (void)resizeStorage {
+	_objects = (id *) realloc(_objects, sizeof(id) * (_capacity + DEFAULT_CAPACITY));
+	for (int i = _capacity; i < _capacity + DEFAULT_CAPACITY; i++) {
+		_objects[i] = NULL;
+	}
+	_capacity += DEFAULT_CAPACITY;
+}
+
 - (void)removeFirstObject {
-	[_objects removeObjectAtIndex:0];
+	[_objects[0] release];
+	memmove(_objects, _objects+1, _capacity - 1);
+	if (_heapSize < _capacity) {
+		_objects[_heapSize-1] = nil;
+	}
+	--_heapSize;
+
 	[self heapify];
 }
 
 - (BOOL)containsObject:(id)object {
-	return [_objects containsObject:object];
+	BOOL wasFound = NO;
+	[self searchObject:object fromIndex:1 wasFound:&wasFound];
+	return wasFound;
+}
+
+
+- (void)searchObject:(id)object fromIndex:(NSUInteger)index wasFound:(BOOL*)wasFound {
+
+	if (index >= _heapSize) {
+		return;
+	}
+
+	NSUInteger left = left(index);
+	NSUInteger right = right(index);
+
+	NSUInteger arrayIndex = index - 1;
+
+	if ([_objects[arrayIndex] isEqual:object]) {
+		*wasFound = YES;
+		return;
+	}
+	else {
+		[self searchObject:object fromIndex:left wasFound:wasFound];
+		[self searchObject:object fromIndex:right wasFound:wasFound];
+	}
 }
 
 
 - (NSUInteger)count {
-	return [_objects count];
+	return _heapSize;
 }
 
 
 - (NSArray *)allValues {
- 	return [_objects sortedArrayUsingComparator:^NSComparisonResult(id first, id second) {
+
+	NSArray *objectsAsArray = [[NSArray alloc] initWithObjects:_objects count:_heapSize];
+
+	NSArray *values = [[objectsAsArray sortedArrayUsingComparator:^NSComparisonResult(id first, id second){
 		return _comparator(second, first);
-	}];
+	}] autorelease];
+
+	[objectsAsArray release];
+	return values;
 }
 
 
@@ -70,6 +138,8 @@
 }
 
 - (void)heapifyFromIndex:(NSUInteger)index {
+
+
 	NSUInteger left = left(index);
 	NSUInteger right = right(index);
 
@@ -78,19 +148,22 @@
 	NSUInteger arrayRight = right - 1;
 
 	NSUInteger largest;
-	if (left <= _objects.count && _comparator(_objects[arrayLeft], _objects[arrayIndex]) == NSOrderedDescending) {
+	if (left <= _heapSize && _comparator(_objects[arrayLeft], _objects[arrayIndex]) == NSOrderedDescending) {
 		largest = left;
 	}
 	else {
 		largest = index;
 	}
 
-	if (right <= _objects.count  && _comparator(_objects[arrayRight], _objects[arrayIndex]) == NSOrderedDescending) {
+	if (right <= _heapSize && _comparator(_objects[arrayRight], _objects[arrayIndex]) == NSOrderedDescending) {
 		largest = right;
 	}
 
 	if (largest != index) {
-		[_objects exchangeObjectAtIndex:arrayIndex withObjectAtIndex:largest - 1];
+		id temp = _objects[arrayIndex];
+		_objects[arrayIndex] = _objects[largest - 1];
+		_objects[largest - 1] = temp;
+
 		[self heapifyFromIndex:largest];
 	}
 
