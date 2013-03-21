@@ -11,12 +11,8 @@ describe(@"ASPriorityQueue", ^{
 	context(@"initialized with the default init-method", ^{
 
 		beforeEach(^{
-			priorityQueue = [[ASPriorityQueue alloc] init];
+			priorityQueue = [[[ASPriorityQueue alloc] init] autorelease];
 		});
-
-
-		
-
 
 		it(@"creates an empty heap", ^{
 
@@ -219,7 +215,7 @@ describe(@"ASPriorityQueue", ^{
 
 			//given
 			NSComparator comparator = ^NSComparisonResult(id left, id right) {
-				return [right compare:left];
+				return [right compare:left]; //reverses ordering
 			};
 
 			priorityQueue = [[ASPriorityQueue alloc] initWithComparator:comparator];
@@ -241,17 +237,27 @@ describe(@"ASPriorityQueue", ^{
 
 			//given
 			NSComparator comparator = ^NSComparisonResult(id left, id right) {
-				return [right compare:left];
+				return [left compare:right];
 			};
 
 			priorityQueue = [[ASPriorityQueue alloc] initWithComparator:comparator andCapacity:16];
 
-			//then
+			//when
 			[[theBlock(^{
 				for (int i = 0; i < 154; i++) {
 					[priorityQueue addObject:@(i)];
 				}
 			}) shouldNot] raise];
+
+			// then
+			NSArray *values = [priorityQueue allValues];
+
+			[[values[0] should] equal:@153];
+			[[values[1] should] equal:@152];
+			[[values[2] should] equal:@151];
+			[[values[3] should] equal:@150];
+			[[values[4] should] equal:@149];
+			[[values[5] should] equal:@148];
 
 		});
 

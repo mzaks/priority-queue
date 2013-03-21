@@ -37,11 +37,8 @@
 
 
 - (void)dealloc {
-	free(_objects);
-	_objects = NULL;
-	_heapSize = 0;
-	_capacity = 0;
 	[_comparator release];
+	free(_objects);
 	[super dealloc];
 }
 
@@ -127,10 +124,9 @@
 - (NSArray *)allValues {
 
 	NSArray *objectsAsArray = [[NSArray alloc] initWithObjects:_objects count:_heapSize];
-
-	NSArray *values = [[objectsAsArray sortedArrayUsingComparator:^NSComparisonResult(id first, id second){
+	NSArray *values = [objectsAsArray sortedArrayUsingComparator:^NSComparisonResult(id first, id second){
 		return _comparator(second, first);
-	}] autorelease];
+	}];
 
 	[objectsAsArray release];
 	return values;
