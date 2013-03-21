@@ -21,7 +21,6 @@ describe(@"ASPriorityQueue", ^{
 
 			//then
 			[firstObject shouldBeNil];
-
 		});
 
 
@@ -262,10 +261,6 @@ describe(@"ASPriorityQueue", ^{
 		});
 
 	});
-
-
-
-
 
 });
 

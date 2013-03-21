@@ -5,10 +5,10 @@
 - (id)initWithComparator:(NSComparator)comparator;
 - (id)initWithComparator:(NSComparator)comparator andCapacity:(NSUInteger)capacity;
 
+- (void)addObject:(id)object;
+
 - (id)firstObject;
 - (void)removeFirstObject;
-
-- (void)addObject:(id)object;
 
 - (BOOL)containsObject:(id)object;
 - (NSUInteger)count;
