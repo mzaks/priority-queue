@@ -15,6 +15,29 @@ describe(@"ASPriorityQueue", ^{
 		});
 
 
+		//array sort: 23.57
+		//heap sort with NSArray: 21.26
+		//heap sort with c array: 13.07
+		//heap sort with c array and memmove: 13.46
+		//heap sort with c array without ARC: 7.504
+
+//		it(@"should be fast", ^{
+//
+//			NSTimeInterval startTime = [NSDate timeIntervalSinceReferenceDate];
+//			for (int i = 0; i < 5000000; i++) {
+//				priorityQueue = [[ASPriorityQueue alloc] init];
+//				[priorityQueue addObject:@3];
+//				[priorityQueue addObject:@1];
+//				[priorityQueue addObject:@2];
+//				[priorityQueue removeFirstObject];
+//			}
+//			NSTimeInterval endTime = [NSDate timeIntervalSinceReferenceDate];
+//			NSTimeInterval timeDelta = endTime - startTime;
+//
+//			[[theValue(timeDelta) should] equal:theValue(1)];
+//		});
+
+
 		it(@"creates an empty heap", ^{
 
 			//when
@@ -245,7 +268,7 @@ describe(@"ASPriorityQueue", ^{
 
 			//then
 			[[theBlock(^{
-				for (int i = 0; i < 129; i++) {
+				for (int i = 0; i < 154; i++) {
 					[priorityQueue addObject:@(i)];
 				}
 			}) shouldNot] raise];

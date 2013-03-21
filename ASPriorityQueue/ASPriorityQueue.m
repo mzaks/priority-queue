@@ -4,7 +4,7 @@
 #define left(index) (index << 1)
 #define right(index) ((index << 1) | 1)
 
-#define DEFAULT_CAPACITY 12
+#define DEFAULT_CAPACITY 10
 
 @implementation ASPriorityQueue {
 	id *_objects;
@@ -29,7 +29,7 @@
 		_capacity = capacity;
 		_objects = (id *) calloc(_capacity, sizeof(id));
 		_heapSize = 0;
-		_comparator = comparator;
+		_comparator = [comparator retain];
 	}
 
 	return self;
@@ -41,6 +41,7 @@
 	_objects = NULL;
 	_heapSize = 0;
 	_capacity = 0;
+	[_comparator release];
 	[super dealloc];
 }
 
@@ -75,8 +76,12 @@
 }
 
 - (void)removeFirstObject {
+	if (_heapSize < 1) {
+		return;
+	}
+
 	[_objects[0] release];
-	memmove(_objects, _objects+1, _capacity - 1);
+	memmove(_objects, _objects+1, sizeof(*_objects) * _heapSize);
 	if (_heapSize < _capacity) {
 		_objects[_heapSize-1] = nil;
 	}
@@ -134,6 +139,9 @@
 
 
 - (void)heapify {
+	if (_heapSize < 2) {
+		return;
+	}
 	[self heapifyFromIndex:1];
 }
 
