@@ -14,7 +14,7 @@ describe(@"ASPriorityQueue", ^{
 			priorityQueue = [[[ASPriorityQueue alloc] init] autorelease];
 		});
 
-		it(@"creates an empty heap", ^{
+		it(@"creates an empty queue", ^{
 
 			//when
 			id firstObject = [priorityQueue firstObject];
