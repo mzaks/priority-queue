@@ -1,7 +1,7 @@
 #
 Pod::Spec.new do |s|
   s.name         = "ASPriorityQueue"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A fast priority queue, implemented as a binary heap."
   s.homepage     = "https://github.com/arne-schroppe/priority-queue"
 
