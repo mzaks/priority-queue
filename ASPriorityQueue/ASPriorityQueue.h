@@ -1,6 +1,6 @@
 #import <Foundation/Foundation.h>
 
-@interface ASPriorityQueue : NSObject
+@interface ASPriorityQueue : NSObject <NSFastEnumeration>
 
 - (id)initWithComparator:(NSComparator)comparator;
 - (id)initWithComparator:(NSComparator)comparator andCapacity:(NSUInteger)capacity;

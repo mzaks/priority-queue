@@ -1,6 +1,5 @@
 #import "ASPriorityQueue.h"
 
-#define parent(index) (index >> 1)
 #define left(index) (index << 1)
 #define right(index) ((index << 1) | 1)
 
@@ -43,15 +42,6 @@
 }
 
 
-- (id)firstObject {
-	if (_heapSize == 0) {
-		return nil;
-	}
-
-	return _objects[0];
-}
-
-
 - (void)addObject:(id)object {
 	if (_heapSize == _capacity) {
 		[self resizeStorage];
@@ -72,6 +62,16 @@
 	_capacity += DEFAULT_CAPACITY;
 }
 
+
+- (id)firstObject {
+	if (_heapSize == 0) {
+		return nil;
+	}
+
+	return _objects[0];
+}
+
+
 - (void)removeFirstObject {
 	if (_heapSize < 1) {
 		return;
@@ -87,6 +87,7 @@
 	[self heapify];
 }
 
+
 - (BOOL)containsObject:(id)object {
 	BOOL wasFound = NO;
 	[self searchObject:object fromIndex:1 wasFound:&wasFound];
@@ -95,15 +96,16 @@
 
 
 - (void)searchObject:(id)object fromIndex:(NSUInteger)index wasFound:(BOOL*)wasFound {
+	NSUInteger arrayIndex = index - 1;
 
-	if (index >= _heapSize) {
+	//We don't need to continue searching if object at current index is "smaller" than searched object
+	if (index >= _heapSize || _comparator(_objects[arrayIndex], object) == NSOrderedAscending) {
 		return;
 	}
 
 	NSUInteger left = left(index);
 	NSUInteger right = right(index);
 
-	NSUInteger arrayIndex = index - 1;
 
 	if ([_objects[arrayIndex] isEqual:object]) {
 		*wasFound = YES;
@@ -133,6 +135,30 @@
 }
 
 
+- (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id[])buffer count:(NSUInteger)len {
+
+	if(state->state == 0) {
+		state->mutationsPtr = (unsigned long *) self;
+		state->itemsPtr = _objects;
+		state->state = 1;
+		return _heapSize;
+	}
+
+	[self rebuildHeap];
+	return 0;
+}
+
+
+
+- (void)rebuildHeap {
+
+	for (NSUInteger i = _heapSize / 2; i >= 1; i--) {
+		[self heapifyFromIndex:i];
+	}
+
+	[self heapifyFromIndex:1]; //TODO for some reason we have to heapify an extra time. Find out why and fix it.
+}
+
 
 - (void)heapify {
 	if (_heapSize < 2) {
@@ -140,6 +166,7 @@
 	}
 	[self heapifyFromIndex:1];
 }
+
 
 - (void)heapifyFromIndex:(NSUInteger)index {
 
@@ -172,5 +199,6 @@
 	}
 
 }
+
 
 @end

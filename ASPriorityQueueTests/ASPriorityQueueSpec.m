@@ -105,10 +105,10 @@ describe(@"ASPriorityQueue", ^{
 			[priorityQueue addObject:@"frob"];
 
 			//when
-			BOOL containsFrob = [priorityQueue containsObject:@"frob"];
+			BOOL containsFrab = [priorityQueue containsObject:@"frab"];
 
 			//then
-			[[theValue(containsFrob) should] beYes];
+			[[theValue(containsFrab) should] beYes];
 		});
 
 
@@ -198,13 +198,73 @@ describe(@"ASPriorityQueue", ^{
 		});
 
 
-		it(@"calls a block with every object", ^{
-			//TODO implement me
-			//should still be a heap after this operation
+		it(@"iterates through all objects in the queue", ^{
+
+			//given
+			[priorityQueue addObject:@3];
+			[priorityQueue addObject:@1];
+			[priorityQueue addObject:@2];
+			[priorityQueue addObject:@5];
+			[priorityQueue addObject:@4];
+
+
+			//when
+			NSMutableArray *collectedObjects = [NSMutableArray array];
+
+			for(id this in priorityQueue) {
+				[collectedObjects addObject:this];
+			}
+
+
+			//then
+			[[collectedObjects should] haveCountOf:5];
+			[[collectedObjects should] contain:@1];
+			[[collectedObjects should] contain:@2];
+			[[collectedObjects should] contain:@3];
+			[[collectedObjects should] contain:@4];
+			[[collectedObjects should] contain:@5];
 		});
 
 
+		it(@"keeps the queue sorted after iteration", ^{
+
+			//given
+			priorityQueue = [[[ASPriorityQueue alloc] initWithComparator:^NSComparisonResult(NSSet *obj1, NSSet *obj2) {
+				id first = [obj1 anyObject];
+				id second = [obj2 anyObject];
+				return [first compare:second];
+			}] autorelease];
+
+			[priorityQueue addObject:[NSMutableSet setWithObject:@3]];
+			[priorityQueue addObject:[NSMutableSet setWithObject:@1]];
+			[priorityQueue addObject:[NSMutableSet setWithObject:@2]];
+			[priorityQueue addObject:[NSMutableSet setWithObject:@4]];
+			[priorityQueue addObject:[NSMutableSet setWithObject:@5]];
+
+			//when
+			for(NSMutableSet *this in priorityQueue) {
+				NSInteger value = [[this anyObject] integerValue];
+				[this removeAllObjects];
+				[this addObject:[NSNumber numberWithInt:6 - value]];
+			}
+
+			//then
+			[[[priorityQueue firstObject] should] equal:[NSMutableSet setWithObject:@5]];
+			[priorityQueue removeFirstObject];
+			[[[priorityQueue firstObject] should] equal:[NSMutableSet setWithObject:@4]];
+			[priorityQueue removeFirstObject];
+			[[[priorityQueue firstObject] should] equal:[NSMutableSet setWithObject:@3]];
+			[priorityQueue removeFirstObject];
+			[[[priorityQueue firstObject] should] equal:[NSMutableSet setWithObject:@2]];
+			[priorityQueue removeFirstObject];
+			[[[priorityQueue firstObject] should] equal:[NSMutableSet setWithObject:@1]];
+		});
+
 	});
+
+
+
+
 
 
 	context(@"with parameters in the init-method", ^{
