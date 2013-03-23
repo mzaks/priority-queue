@@ -16,7 +16,6 @@
 		A9BC325B16F66279005C6AD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC325A16F66279005C6AD8 /* UIKit.framework */; };
 		A9BC325C16F66279005C6AD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC324916F66279005C6AD8 /* Foundation.framework */; };
 		A9BC325F16F66279005C6AD8 /* ASPriorityQueue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9BC324616F66279005C6AD8 /* ASPriorityQueue.a */; };
-		A9BC326516F66279005C6AD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9BC326316F66279005C6AD8 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,14 +47,12 @@
 		85D85C9D9EE2B558E4957B61 /* ASPriorityQueueSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPriorityQueueSpec.m; sourceTree = "<group>"; };
 		A9BC324616F66279005C6AD8 /* ASPriorityQueue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = ASPriorityQueue.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BC324916F66279005C6AD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A9BC324D16F66279005C6AD8 /* ASPriorityQueue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASPriorityQueue-Prefix.pch"; sourceTree = "<group>"; };
 		A9BC324E16F66279005C6AD8 /* ASPriorityQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASPriorityQueue.h; sourceTree = "<group>"; };
 		A9BC325016F66279005C6AD8 /* ASPriorityQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASPriorityQueue.m; sourceTree = "<group>"; };
 		A9BC325716F66279005C6AD8 /* ASPriorityQueueTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASPriorityQueueTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BC325816F66279005C6AD8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A9BC325A16F66279005C6AD8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A9BC326216F66279005C6AD8 /* ASPriorityQueueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ASPriorityQueueTests-Info.plist"; sourceTree = "<group>"; };
-		A9BC326416F66279005C6AD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,17 +115,8 @@
 			children = (
 				A9BC324E16F66279005C6AD8 /* ASPriorityQueue.h */,
 				A9BC325016F66279005C6AD8 /* ASPriorityQueue.m */,
-				A9BC324C16F66279005C6AD8 /* Supporting Files */,
 			);
 			path = ASPriorityQueue;
-			sourceTree = "<group>";
-		};
-		A9BC324C16F66279005C6AD8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A9BC324D16F66279005C6AD8 /* ASPriorityQueue-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A9BC326016F66279005C6AD8 /* ASPriorityQueueTests */ = {
@@ -144,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				A9BC326216F66279005C6AD8 /* ASPriorityQueueTests-Info.plist */,
-				A9BC326316F66279005C6AD8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -221,7 +208,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9BC326516F66279005C6AD8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,17 +270,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		A9BC326316F66279005C6AD8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A9BC326416F66279005C6AD8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		A9BC326916F66279005C6AD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -310,8 +285,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SOURCE_ROOT)/ASPriorityQueue/ASPriorityQueue-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -337,8 +311,7 @@
 				COPY_PHASE_STRIP = YES;
 				EXECUTABLE_PREFIX = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SOURCE_ROOT)/ASPriorityQueue/ASPriorityQueue-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;

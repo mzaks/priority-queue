@@ -178,7 +178,7 @@ describe(@"ASPriorityQueue", ^{
 
 
 
-		it(@"should by default use 'compare:' for comparison", ^{
+		it(@"use 'compare:' for comparison by default", ^{
 
 			//given
 			NSNumber *one = [NSNumber nullMockWithName:@"one"];
@@ -292,7 +292,7 @@ describe(@"ASPriorityQueue", ^{
 		});
 
 
-		it(@"should properly reallocate more storage", ^{
+		it(@"properly reallocates more storage", ^{
 
 			//given
 			NSComparator comparator = ^NSComparisonResult(id left, id right) {
