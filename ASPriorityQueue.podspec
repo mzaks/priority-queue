@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Arne Schroppe" => "arne.schroppe@gmx.de" }
   s.source       = { :git => "https://github.com/arne-schroppe/priority-queue.git", :tag => s.version.to_s }
-  s.platform     = :ios
   s.source_files = 'ASPriorityQueue/'
 
   s.public_header_files = 'ASPriorityQueue'
